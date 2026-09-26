@@ -3,23 +3,23 @@ Let $A$ be the statement that $0 \neq 1$.
 Let $\neg A$ be the negation of $A$, i.e. the statement that $0=1$.
 Let $B$ be any other statement.
 
-⚠️ **Theorem**
-Suppose that both $A$ and $\neg A$ are true, then $B$ is also true.
+> [!WARNING] Theorem
+> Suppose that both $A$ and $\neg A$ are true, then $B$ is also true.
 
-ℹ️ **Proof**
-Consider the statement $A \lor B$.
-Then $A \lor B$ is true since $A$ is true.
-However, $A$ is also false and the only way $A \lor B$ can be true is if $B$ is true. $\quad \blacksquare$
+> [!NOTE] Proof
+> Consider the statement $A \lor B$. \
+> Then $A \lor B$ is true since $A$ is true. \
+> However, $A$ is also false and the only way $A \lor B$ can be true is if $B$ is true. $\quad \blacksquare$
 
 ---
 
-**Q: What do we mean when we say $\lim_{x \to \infty} f(x) = 1$, or the curves $\gamma_1 , \gamma_2 , \gamma_3 , \dots$ converge to $\gamma_{\infty}$?**
+Q: What do we mean when we say $\lim_{x \to \infty} f(x) = 1$, or the curves $\gamma_1 , \gamma_2 , \gamma_3 , \dots$ converge to $\gamma_{\infty}$?
 
 This can be stated as $\text{distance}(f(x),1) \rightarrow 0$ for $x \rightarrow \infty$, and $\text{distance}(\gamma_i, \gamma_{\infty}) \rightarrow 0$ for $i \rightarrow \infty$.
 
 The distance function $d$ is a map $f: X \times X \rightarrow \mathbb{R}$ where $X \subseteq \mathbb{R}$ or $X$ is the set of curves.
 
-#### Set Theory Notation
+### Set Theory Notation
 1. $x \in A$ in case $x$ is an element of $A$.
 2. $A \subseteq B$ in case if $x \in A$, then also $x \in B$.
 3. $A = B$ if $A \subseteq B$ and $B \subseteq A$.
@@ -27,23 +27,24 @@ The distance function $d$ is a map $f: X \times X \rightarrow \mathbb{R}$ where 
 5. $A \cup B = \{x \mid x \in A \text{ or } x \in B\}$.
 6. $A \cap B = \{ x \mid x \in A \land x \in B\}$
 
-🛑 **Proposition**
-Let $A, B, C$ be sets. Then, $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$
+> [!CAUTION] Proposition
+> Let $A, B, C$ be sets. Then, $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$
 
-ℹ️ **Proof**
-* **Direction ($\subseteq$):** Let $x \in A \cap (B \cup C)$.
-  Then $x \in A$ and $x \in B \cup C$ (i.e., $x \in B$ or $x \in C$).
-  Therefore, $x \in A \cap B$ or $x \in A \cap C$.
-  Consequently, $x \in (A \cap B) \cup (A \cap C)$.
+> [!NOTE] Proof
+> "$\subseteq$" Let $x \in A \cap (B \cup C)$. \
+> Then $x \in A$ and $x \in B \cup C$. \
+> i.e. $x \in B$ or $x \in C$. \
+> Therefore, $x \in A \cap B$ or $x \in A \cap C$. \
+> Consequently, $x \in (A \cap B) \cup (A \cap C)$.
+> 
+> "$\supseteq$" Let $x \in (A \cap B) \cup (A \cap C) \implies x \in A \cap B \lor x \in A \cap C$ \
+> $\implies (x \in A \land x \in B) \lor (x \in A \land x \in C)$ \
+> $\implies x \in A \land (x \in B \lor x \in C)$ \
+> $\implies x \in A \land x \in B \cup C$ \
+> $\implies x \in A \cap (B \cup C) \quad \blacksquare$
 
-* **Direction ($\supseteq$):** Let $x \in (A \cap B) \cup (A \cap C) \implies x \in A \cap B \lor x \in A \cap C$
-  $\implies (x \in A \land x \in B) \lor (x \in A \land x \in C)$
-  $\implies x \in A \land (x \in B \lor x \in C)$
-  $\implies x \in A \land x \in B \cup C$
-  $\implies x \in A \cap (B \cup C) \quad \blacksquare$
-
-💡 **Definition**
-Let $A \subseteq X$. Then $A^C = \{x \in X \mid x \notin A \}$ is called the complement of $A$ in $X$.
+> [!IMPORTANT] Definition
+> Let $A \subseteq X$. Then $A^C = \{x \in X \mid x \notin A \}$ is called the complement of $A$ in $X$.
 
 ---
 
@@ -52,6 +53,6 @@ Let $X, Y$ be sets. A function $f : X \rightarrow Y$ assigns to each $x \in X$ p
 We call $X$ the domain and $Y$ the codomain of $f$.
 
 If for each $y \in Y$, there is:
-1. at most one $x \in X$ such that $f(x) = y$, we call $f$ **injective**.
-2. at least one $x \in X$ such that $f(x) = y$, we call $f$ **surjective**.
-3. exactly one $x \in X$ such that $f(x) = y$, we call $f$ **bijective**.
+1. at most one $x \in X$ such that $f(x) = y$, we call $f$ injective.
+2. at least one $x \in X$ such that $f(x) = y$, we call $f$ surjective.
+3. exactly one $x \in X$ such that $f(x) = y$, we call $f$ bijective.
