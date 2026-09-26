@@ -3,12 +3,12 @@ Let $A$ be the statement that $0 \neq 1$.
 Let $\neg A$ be the negation of $A$, i.e. the statement that $0=1$.
 Let $B$ be any other statement.
 
-⚠️ **Theorem**
+⚠️ **Theorem** <br>
 Suppose that both $A$ and $\neg A$ are true, then $B$ is also true.
 
-ℹ️ **Proof**
-Consider the statement $A \lor B$. \
-Then $A \lor B$ is true since $A$ is true. \
+ℹ️ **Proof** <br>
+Consider the statement $A \lor B$. <br>
+Then $A \lor B$ is true since $A$ is true. <br>
 However, $A$ is also false and the only way $A \lor B$ can be true is if $B$ is true. $\quad \blacksquare$
 
 ---
@@ -27,23 +27,25 @@ The distance function $d$ is a map $f: X \times X \rightarrow \mathbb{R}$ where 
 5. $A \cup B = \{x \mid x \in A \text{ or } x \in B\}$.
 6. $A \cap B = \{ x \mid x \in A \land x \in B\}$
 
-🛑 **Proposition**
+🛑 **Proposition** <br>
 Let $A, B, C$ be sets. Then, $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$
 
-ℹ️ **Proof**
-"$\subseteq$" Let $x \in A \cap (B \cup C)$. \
-Then $x \in A$ and $x \in B \cup C$. \
-i.e. $x \in B$ or $x \in C$. \
-Therefore, $x \in A \cap B$ or $x \in A \cap C$. \
-Consequently, $x \in (A \cap B) \cup (A \cap C)$.
-
-"$\supseteq$" Let $x \in (A \cap B) \cup (A \cap C) \implies x \in A \cap B \lor x \in A \cap C$ \
-$\implies (x \in A \land x \in B) \lor (x \in A \land x \in C)$ \
-$\implies x \in A \land (x \in B \lor x \in C)$ \
-$\implies x \in A \land x \in B \cup C$ \
+ℹ️ **Proof** <br>
+**Direction $\subseteq$:** <br>
+Let $x \in A \cap (B \cup C)$. <br>
+Then $x \in A$ and $x \in B \cup C$. <br>
+i.e. $x \in B$ or $x \in C$. <br>
+Therefore, $x \in A \cap B$ or $x \in A \cap C$. <br>
+Consequently, $x \in (A \cap B) \cup (A \cap C)$. <br>
+<br>
+**Direction $\supseteq$:** <br>
+Let $x \in (A \cap B) \cup (A \cap C) \implies x \in A \cap B \lor x \in A \cap C$ <br>
+$\implies (x \in A \land x \in B) \lor (x \in A \land x \in C)$ <br>
+$\implies x \in A \land (x \in B \lor x \in C)$ <br>
+$\implies x \in A \land x \in B \cup C$ <br>
 $\implies x \in A \cap (B \cup C) \quad \blacksquare$
 
-💡 **Definition**
+💡 **Definition** <br>
 Let $A \subseteq X$. Then $A^C = \{x \in X \mid x \notin A \}$ is called the complement of $A$ in $X$.
 
 ---
