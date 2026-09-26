@@ -4,46 +4,47 @@ Let $\neg A$ be the negation of $A$, i.e. the statement that $0=1$.
 Let $B$ be any other statement.
 
 > [!WARNING] Theorem 
-> Suppose that both $A$ and $\neg P$ are true, then $B$ is also true.
+> Suppose that both $A$ and $\neg A$ are true, then $B$ is also true.
 
 > [!NOTE] Proof
 > Consider the statement $A \lor B$.
-> Then $A \lor B$ is true since A is true.
+> Then $A \lor B$ is true since $A$ is true.
 > However, $A$ is also false and the only way $A \lor B$ can be true is if $B$ is true. $\quad \blacksquare$
 
-Q: What do we mean when we say $\lim_{x \to \infty} f(x) = 1$, or the curves $\gamma_1 , \gamma_2 , \gamma_3 , ...$ converge to $\gamma_{\infty}$?
+Q: What do we mean when we say $\lim_{x \to \infty} f(x) = 1$, or the curves $\gamma_1 , \gamma_2 , \gamma_3 , \dots$ converge to $\gamma_{\infty}$?
 
-This can be stated as $distance(f(x),1) \rightarrow 0$ for $x \rightarrow \infty$, $distance (\gamma_i, \gamma_{\infty}) \rightarrow 0$ for $i \rightarrow \infty$.
+This can be stated as $\text{distance}(f(x),1) \rightarrow 0$ for $x \rightarrow \infty$, and $\text{distance}(\gamma_i, \gamma_{\infty}) \rightarrow 0$ for $i \rightarrow \infty$.
 
-The distance function $d$ is a map $f: X \times X \rightarrow \mathbb{R}$ where $X \in \mathbb{R}$ or $X$ is the set of curves.
+The distance function $d$ is a map $f: X \times X \rightarrow \mathbb{R}$ where $X \subseteq \mathbb{R}$ or $X$ is the set of curves.
 
-Let $A,B$ be sets. Then we write:
-1. $x \in A$ in case $x$ is an element of A
+Let $A, B$ be sets. Then we write:
+1. $x \in A$ in case $x$ is an element of $A$.
 2. $A \subseteq B$ in case if $x \in A$, then also $x \in B$.
 3. $A = B$ if $A \subseteq B$ and $B \subseteq A$.
-4. $A \setminus B = \{x \in A | x \notin B\}$ 
-5. $A \cup B = \{x | x \in A$ or $\ x \in B \}$.
-6. $A \cap B = \{ x | x \in A \cap x \in B\}$
+4. $A \setminus B = \{x \in A \mid x \notin B\}$ 
+5. $A \cup B = \{x \mid x \in A \text{ or } x \in B\}$.
+6. $A \cap B = \{ x \mid x \in A \land x \in B\}$
 
 > [!CAUTION] Proposition
 > Let $A, B, C$ be sets. Then, $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$
 
 > [!NOTE] Proof
-> "$\subseteq$" Let $x \in A \cap (B \cap C)$.
+> "$\subseteq$" Let $x \in A \cap (B \cup C)$.
 > Then $x \in A$ and $x \in B \cup C$.
-> i.e. $x \in B$ or $x \in C$
+> i.e. $x \in B$ or $x \in C$.
 > Therefore, $x \in A \cap B$ or $x \in A \cap C$.
-> Consequently, $x \in (A \cap B) \cup (A \cap C)$
-> "$\geq$" $x \in (A \cap B) \cup (A \cap C) \implies x \in A \cap B \lor x \in A \cap C$
-> $\implies (x \in A \cap x \in B) \lor (x \in A \cap x \in C)$
-> $\implies x \in A \cap (x \in B \lor x \in C)$
+> Consequently, $x \in (A \cap B) \cup (A \cap C)$.
+>
+> "$\supseteq$" Let $x \in (A \cap B) \cup (A \cap C) \implies x \in A \cap B \lor x \in A \cap C$
+> $\implies (x \in A \land x \in B) \lor (x \in A \land x \in C)$
+> $\implies x \in A \land (x \in B \lor x \in C)$
 > $\implies x \in A \land x \in B \cup C$
 > $\implies x \in A \cap (B \cup C) \quad \blacksquare$
 
-> [!IMPORTANT] Defintion
-> Let $A \subseteq B$. Then $A^C = \{x \in X | x \in A \}$ is called the compliment of $A$ in $X$.
+> [!IMPORTANT] Definition
+> Let $A \subseteq X$. Then $A^C = \{x \in X \mid x \notin A \}$ is called the complement of $A$ in $X$.
 
-Let $X, Y$ be sets, a function $f : X \rightarrow Y$ assigns each $x \in X$ precisely over $y = f(x) \in Y$.
+Let $X, Y$ be sets. A function $f : X \rightarrow Y$ assigns to each $x \in X$ precisely one $y = f(x) \in Y$.
 
 We call $X$ the domain and $Y$ the codomain of $f$.
 
