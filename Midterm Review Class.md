@@ -44,7 +44,7 @@ $A$ is open iff $A^c$ is closed.
 
 ⚠️ **Theorem**
 
-If $A_\alpha$, $\alpha\in\mathcal A$, are open, then $\bigcup_{\alpha\in\mathcal A}A_\alpha$ is open.
+If $A_\alpha$, $\alpha\in\mathcal{A}$, are open, then $\bigcup_{\alpha\in\mathcal{A}}A_\alpha$ is open.
 
 If $A_i$, $1\leq i\leq N$, are open, then $\bigcap_{i=1}^{N}A_i$ is open.
 
@@ -54,9 +54,9 @@ If $A_i$, $1\leq i\leq N$, are open, then $\bigcap_{i=1}^{N}A_i$ is open.
 
 (i) $A\subseteq X$ is **compact** if every open cover has a finite subcover.
 
-(ii) $A\subseteq X$ is **limit point compact** if every infinite set $E\subseteq A$ has a limit point in $E$; often $E=\{x_n\mid n\in\mathbb N\}$.
+(ii) $A\subseteq X$ is **limit point compact** if every infinite set $E\subseteq A$ has a limit point in $E$; often $E=\{x_n\mid n\in\mathbb{N}\}$.
 
-(iii) $A\subseteq X$ is **sequentially compact** if every sequence $\{x_n\}_{n\in\mathbb N}$ in $A$ has a convergent subsequence.
+(iii) $A\subseteq X$ is **sequentially compact** if every sequence $(x_n)_{n\in\mathbb{N}}$ in $A$ has a convergent subsequence.
 
 ⚠️ **Theorem**
 
@@ -67,13 +67,13 @@ If $A_i$, $1\leq i\leq N$, are open, then $\bigcap_{i=1}^{N}A_i$ is open.
 
 ## Bolzano–Weierstrass Theorem
 
-If $\{x_n\}_{n\in\mathbb N}$ is a bounded sequence in $\mathbb{R}^n$, then $\{x_n\}_{n\in\mathbb N}$ has a convergent subsequence.
+If $(x_n)_{n\in\mathbb{N}}$ is a bounded sequence in $\mathbb{R}^n$, then $(x_n)_{n\in\mathbb{N}}$ has a convergent subsequence.
 
 ## Sequences
 
-**Definition.** $\lim_{n\to\infty}x_n=x$ iff for every $\epsilon>0$, there exists $N\in\mathbb N$ such that for every $n\geq N$, $d(x_n,x)<\epsilon$.
+**Definition.** $\lim_{n\to\infty}x_n=x$ iff for every $\epsilon>0$, there exists $N\in\mathbb{N}$ such that for every $n\geq N$, $d(x_n,x)<\epsilon$.
 
-A sequence $\{x_n\}_{n\in\mathbb N}$ is **Cauchy** iff for every $\epsilon>0$, there exists $N\in\mathbb N$ such that for every $n,m\geq N$, $d(x_n,x_m)<\epsilon$.
+A sequence $(x_n)_{n\in\mathbb{N}}$ is **Cauchy** iff for every $\epsilon>0$, there exists $N\in\mathbb{N}$ such that for every $n,m\geq N$, $d(x_n,x_m)<\epsilon$.
 
 ⚠️ **Theorem**
 
@@ -83,7 +83,7 @@ Convergent $\Rightarrow$ Cauchy $\Rightarrow$ bounded.
 
 ⚠️ **Theorem**
 
-If $\{x_n\}_{n\in\mathbb N}$ is a sequence in $\mathbb{R}$ that is monotonically increasing and bounded, then it converges.
+If $(x_n)_{n\in\mathbb{N}}$ is a sequence in $\mathbb{R}$ that is monotonically increasing and bounded, then it converges.
 
 **Definition.** $X$ is called **complete** if all Cauchy sequences converge.
 
@@ -95,13 +95,13 @@ If $\{x_n\}_{n\in\mathbb N}$ is a sequence in $\mathbb{R}$ that is monotonically
 
 ## Series
 
-**Definition.** Let $\{a_n\}_{n\in\mathbb N}$ be a sequence in $\mathbb{C}$. The series $\sum_{n=0}^{\infty}a_n$ converges iff the sequence of partial sums $S_N=\sum_{n=0}^{N}a_n$ converges.
+**Definition.** Let $(a_n)_{n\in\mathbb{N}}$ be a sequence in $\mathbb{C}$. The series $\sum_{n=0}^{\infty}a_n$ converges iff the sequence of partial sums $S_N=\sum_{n=0}^{N}a_n$ converges.
 
 ### Examples
 
 **Geometric Series:** $\sum_{n=0}^{\infty}x^n$ converges iff $|x|<1$.
 
-**Harmonic Series:** $\sum_{n=1}^{\infty}\frac1n$ diverges.
+**Harmonic Series:** $\sum_{n=1}^{\infty}\frac{1}{n}$ diverges.
 
 These are powerful when combined with the **Comparison Test**.
 
@@ -121,7 +121,7 @@ The following are equivalent:
 
 (i) $f$ is continuous.
 
-(ii) $\lim_{n\to\infty}f(x_n)=f(x)$ for every sequence $\{x_n\}_{n\in\mathbb N}$ such that $\lim_{n\to\infty}x_n=x$.
+(ii) $\lim_{n\to\infty}f(x_n)=f(x)$ for every sequence $(x_n)_{n\in\mathbb{N}}$ such that $\lim_{n\to\infty}x_n=x$.
 
 (iii) $f^{-1}(A)$ is open for every open $A\subseteq Y$.
 
