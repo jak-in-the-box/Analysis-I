@@ -4,9 +4,9 @@
 
 A set $X$ and a function
 
-$$
+$
 d:X\times X\to\mathbb{R}
-$$
+$
 
 is called a **metric space** if:
 
@@ -16,21 +16,21 @@ is called a **metric space** if:
 
 ## Examples
 
-### (i) $\mathbb{R}^n$ with Euclidean metric
+(i) $\mathbb{R}^n$ with Euclidean metric
 
-$$
+$
 d\big((x_1,\ldots,x_n),(y_1,\ldots,y_n)\big)
 =
 \sum_{i=1}^{n}\sqrt{(x_i-y_i)^2}
-$$
+$
 
 For $n=1$:
 
-$$
+$
 |x-y|.
-$$
+$
 
-### (ii) Discrete metric
+(ii) Discrete metric
 
 $$
 d_d(x,y)=
